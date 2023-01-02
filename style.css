@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -35,7 +36,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width:100%;
+  max-width: 588px;
   margin-top: 56px;
   margin: auto;
 }
@@ -159,4 +161,16 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+}
+
+/*mundando o fundo baseada na largura*/
+@media (min-width:700px){
+  :root {
+    --bg-url: url(./Assents/bg-descktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./Assents/bg-descktoplight.jpg);
+
+  }
 }
