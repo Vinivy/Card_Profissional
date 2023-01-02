@@ -79,11 +79,12 @@ body * {
   left: 0;
   transform: translateY(-50%);
   top: 50%;
+
+  animation: slider-voltar 0.2s;
 }
 
 .light #swidth button {
-  right: 0;
-  left: initial;
+  animation: slider 0.4s forwards;
 }
 
 #swidth span {
@@ -94,6 +95,12 @@ body * {
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
   border-radius: 9999px;
+  
+}
+
+#swidth button:hover {
+  outline: 8px solid var(--heighlight-color);
+
 }
 
 /* links */
@@ -172,5 +179,24 @@ footer {
   .light {
     --bg-url: url(./Assents/bg-descktoplight.jpg);
 
+  }
+}
+
+/*aimação e a sua teg é @keyframes*/
+@keyframes slider {
+  from{
+    left: 0%;
+  }
+  to{
+    left: 50%;
+  }
+}
+
+@keyframes slider-voltar {
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0%;
   }
 }
