@@ -31,7 +31,6 @@ body {
 
 body * {
   font-family: 'Inter', sans-serif;
-  color: #ffffff;
   color: var(--text-color);
 }
 
@@ -134,7 +133,7 @@ ul li a {
 /* pseudo-selector */
 ul li a:hover {
   background: var(--surface-color-houver);
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid var(--text-color);
 }
 
 /*social-links*/
@@ -164,7 +163,7 @@ ul li a:hover {
 }
 
 footer {
-  justify-content: center;
+  
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
