@@ -11,6 +11,6 @@ function toggleMode() {
     img.setAttribute('src', './Assents/EU-light.png')
   } else {
     // se tiver sem o light mode, manter normal
-    img.setAttribute('src', './Assents/EU.png')
+    img.setAttribute('src', './Assents/Eu.jpg')
   }
 }
